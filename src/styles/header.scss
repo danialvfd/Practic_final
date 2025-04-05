@@ -1,0 +1,44 @@
+.header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+  
+    &__container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+  
+    &__logo {
+      height: 30px;
+    }
+  
+    &__search {
+      direction: rtl;
+      flex: 1;
+      margin: 0 20px;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+  
+    &__actions {
+      display: flex;
+      gap: 10px;
+    }
+  
+    &__login,
+    &__cart {
+      padding: 8px 12px;
+      background-color: #e60023;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+  }  
