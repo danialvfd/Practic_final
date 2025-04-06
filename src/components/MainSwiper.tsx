@@ -1,6 +1,6 @@
 'use client';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { mainSwiperData } from '../data/mockData';
+import { mainSwiperData } from '../data/swiperData';
 import { Navigation } from 'swiper/modules';
 
 import 'swiper/css';
@@ -13,7 +13,7 @@ const MainSwiper = () => {
     <div className="swiper-container">
       <Swiper
         modules={[Navigation]}
-        spaceBetween={50}
+        spaceBetween={0}
         slidesPerView={9}
         loop={true}
         pagination={{ clickable: true }}
