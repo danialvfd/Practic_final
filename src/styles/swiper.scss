@@ -1,23 +1,21 @@
 .swiper-container {
-  direction: rtl;
-  background-color: #f8f8f8;
+  align-items: center;
   overflow: hidden;
-  padding: 20px;
+  padding: 1.5rem;
 }
 
 .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f8f8f8;
   border-radius: 8px;
 }
 
 .swiper-slide-image {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   height: auto;
-  border-radius: 50%; 
+  border-radius: 50%;
   border: 5px solid #63008a;
   overflow: hidden;
 }
@@ -31,20 +29,10 @@
 }
 
 .swiper-slide-text {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 0.8rem;
   color: rgb(0, 0, 0);
   border-radius: 4px;
   margin-top: 2px;
-}
-
-.swiper-slide-text h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.swiper-slide-text p {
-  font-size: 1rem;
-  margin-top: 5px;
 }
 
 .swiper-button-next,
@@ -53,7 +41,7 @@
   height: 40px;
   border-radius: 50%;
   background-color: #fff;
-  border: 1px solid #000;
+  border: 0.1px solid #000;
   color: #000;
   transition: background-color 0.3s ease;
 
@@ -80,6 +68,7 @@
 .offers-swiper-container {
   background-color: #f36262;
   padding: 1rem;
+  border-radius: 1rem;
 }
 
 .offer-item {
@@ -101,13 +90,11 @@
 }
 
 .offer-description {
-  direction: rtl;
   font-size: 14px;
   color: #333;
 }
 
 .offer-price {
-  direction: rtl;
   text-align: left;
   display: flex;
   justify-content: space-between;
@@ -116,21 +103,43 @@
 }
 
 .offer-current-price {
-  font-size: 16px;
+  font-size: 0.9rem;
   font-weight: bold;
   color: #e60023;
 }
 
 .offer-discount {
-  font-size: 14px;
+  font-size: 0.8rem;
   color: #28a745;
 }
 
 .offer-original-price {
-  direction: rtl;
   text-align: left;
   text-decoration: line-through;
   color: #aaa;
-  font-size: 14px;
+  font-size: 0.9rem;
   margin-top: 10px;
+}
+
+.main-category-swiper-container {
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.main-category-item {
+  text-align: center;
+}
+
+.main-category-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.main-category-title {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
 }

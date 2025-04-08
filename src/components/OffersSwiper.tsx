@@ -22,8 +22,8 @@ const OffersSwiper = () => {
               <img src={item.image} alt={item.description} className="offer-image" />
               <div className="offer-details">
               <p className="offer-description">
-                  {item.description.length > 40
-                    ? item.description.slice(0, 40) + '...'
+                  {item.description.length > 30
+                    ? item.description.slice(0, 30) + '...'
                     : item.description}
                 </p>
                 <div className="offer-price">

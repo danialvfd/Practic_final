@@ -10,17 +10,17 @@ export const mainSwiperData: SwiperItem[] = [
   {
     id: 1,
     image: "/images/slider-image-1.jpg",
-    description: "😂 چی شد؟",
+    description: "چی شد؟",
   },
   {
     id: 2,
     image: "/images/slider-image-2.jpg",
-    description: "😍 ارزونش موجود شد",
+    description: "ارزونش موجود شد",
   },
   {
     id: 3,
     image: "/images/slider-image-3.jpg",
-    description: "👀 چراغ خواب خاص",
+    description: "چراغ خواب خاص",
   },
   {
     id: 4,
@@ -35,17 +35,17 @@ export const mainSwiperData: SwiperItem[] = [
   {
     id: 6,
     image: "/images/slider-image-1.jpg",
-    description: "😂 چی شد؟",
+    description: "چی شد؟",
   },
   {
     id: 7,
     image: "/images/slider-image-2.jpg",
-    description: "😍 ارزونش موجود شد",
+    description: "ارزونش موجود شد",
   },
   {
     id: 8,
     image: "/images/slider-image-3.jpg",
-    description: "👀 چراغ خواب خاص",
+    description: "چراغ خواب خاص",
   },
   {
     id: 9,

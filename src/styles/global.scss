@@ -1,24 +1,23 @@
 $primary-color: #e9001f;
 
 @font-face {
-  font-family: 'CustomFont';
-  src: url('/fonts/IRANYekanBoldFaNum.ttf') format('ttf');
+  font-family: 'IRANYekan';
+  src: url('/fonts/IRANYekanBoldFaNum.ttf') format('truetype'), ;
   font-weight: normal;
   font-style: normal;
 }
-* {
-  font-family: 'MyCustomFont', sans-serif;
-}
+
 body {
-  font-family: sans-serif;
-  background-color: #b5b5b5;
+  font-family: 'IRANYekan', sans-serif;
   color: #333;
   margin: 0;
   padding: 0;
 }
 
 .container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
+  max-width: 1336px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
