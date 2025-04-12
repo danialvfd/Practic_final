@@ -12,8 +12,15 @@ const MainSwiper = () => {
     <div className="swiper-container">
       <Swiper
         modules={[Navigation]}
-        spaceBetween={0}
-        slidesPerView={9}
+        breakpoints={{
+          1024: {
+            slidesPerView: 9, 
+            spaceBetween: 10, 
+          },
+          768: {
+            slidesPerView: 7,  
+          },
+        }}
         loop={false}
         pagination={{ clickable: true }}
         navigation={true}

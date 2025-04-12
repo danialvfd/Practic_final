@@ -4,6 +4,7 @@ import { bestsellerItems } from '../data/bestsellersData';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Grid } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/grid';
 import 'swiper/css/navigation';
 import '../styles/bestsellers.scss';
 
@@ -18,8 +19,15 @@ const Bestsellers = () => {
         modules={[Grid, Navigation]}
         navigation={true}
         loop={false}
-        spaceBetween={20}
-        slidesPerView={4}
+        breakpoints={{
+          1024: {
+            slidesPerView: 3, 
+            spaceBetween: 20, 
+          },
+          768: {
+            slidesPerView: 1, 
+          },
+        }}
         grid={{ rows: 3, fill: 'row' }}
         className="bestsellers-swiper"
       >
