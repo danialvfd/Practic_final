@@ -14,7 +14,7 @@ const MainSwiper = () => {
         modules={[Navigation]}
         spaceBetween={0}
         slidesPerView={9}
-        loop={true}
+        loop={false}
         pagination={{ clickable: true }}
         navigation={true}
       >

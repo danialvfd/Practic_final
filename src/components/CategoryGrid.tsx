@@ -1,6 +1,4 @@
 'use client';
-
-import React from 'react';
 import { categoryItems } from '../data/categoryData';
 import '../styles/category.scss';
 

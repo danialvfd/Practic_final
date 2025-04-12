@@ -13,7 +13,7 @@ const BannerSwiper = () => {
             <Swiper
                 modules={[Navigation, Pagination]}
                 slidesPerView={1}
-                loop={true}
+                loop={false}
                 pagination={{ clickable: true }}
                 navigation={true}
             >

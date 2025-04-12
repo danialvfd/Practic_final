@@ -5,6 +5,8 @@ import OffersSwiper from "../components/OffersSwiper";
 import AdserviceBanner from "@/components/AdserviceBanner";
 import CategorySwiper from "@/components/CategorySwiper";
 import DoubleAdBanner from "@/components/DoubleAdBanner";
+import CategoryBox from "@/components/CategoryBox";
+import Bestsellers from "@/components/Bestsellers";
 
 export default function Home() {
   return (
@@ -19,6 +21,8 @@ export default function Home() {
         <AdserviceBanner />
         <CategorySwiper />
         <DoubleAdBanner />
+        <CategoryBox />
+        <Bestsellers />
       </div>
     </main>
   );

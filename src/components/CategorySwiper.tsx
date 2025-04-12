@@ -20,7 +20,7 @@ const CategorySwiper = () => {
                     fill: "row"
                 }}
                 modules={[Grid, Navigation]}
-                loop={true}
+                loop={false}
                 pagination={{ clickable: true }}
                 navigation={true}
                 className="main-category-swiper"

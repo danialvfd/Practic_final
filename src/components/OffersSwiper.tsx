@@ -1,6 +1,7 @@
 'use client';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { offersData } from '../data/mockData';
+import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -10,9 +11,10 @@ const OffersSwiper = () => {
   return (
     <div className="offers-swiper-container">
       <Swiper
+        modules={[Navigation]}
         spaceBetween={20}
         slidesPerView={7}
-        loop={true}
+        loop={false}
         pagination={{ clickable: true }}
         navigation={true}
       >
