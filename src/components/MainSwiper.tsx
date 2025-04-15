@@ -20,6 +20,9 @@ const MainSwiper = () => {
           768: {
             slidesPerView: 7,  
           },
+          425: {
+            slidesPerView: 3,  
+          },
         }}
         loop={false}
         pagination={{ clickable: true }}

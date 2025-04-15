@@ -29,6 +29,9 @@
     &__actions {
       display: flex;
       gap: 10px;
+      @media (max-width:768px) {
+        display: none;
+      }
     }
   
     &__login,
@@ -40,5 +43,8 @@
       border-radius: 6px;
       cursor: pointer;
       font-size: 14px;
+      @media (max-width:768px) {
+        display: none;
+      }
     }
   }  

@@ -2,9 +2,9 @@ export interface OfferItem {
   id: number;
   image: string;
   description: string;
-  price: number;
-  discountPercentage: number;
-  originalPrice: number;
+  price?: number;
+  discountPercentage?: number;
+  originalPrice?: number;
 }
 
 export const offersData: OfferItem[] = [
@@ -22,7 +22,7 @@ export const offersData: OfferItem[] = [
     description: "اسپیکر بلوتوثی قابل حمل جی بی ال مدل Party Box 310",
     price: 30018200,
     discountPercentage: 18,
-    originalPrice: 36428200,
+    //originalPrice: 36428200,  
   },
   {
     id: 3,
