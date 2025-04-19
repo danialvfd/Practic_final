@@ -5,13 +5,20 @@
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: space-between;
-  padding: 1rem 5rem 1rem 5rem;
+  padding: 1rem 5rem;
+  @media (max-width:426px) {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
 }
 
 .category-item {
   width: 80px;
   text-align: center;
   cursor: pointer;
+  @media (max-width:426px) {
+    width: 90%;
+  }
 }
 
 .category-image {
@@ -25,6 +32,9 @@
   margin-top: 0.5rem;
   font-size: 1rem;
   color: #333;
+  @media (max-width:426px) {
+    font-size: 30%;
+  }
 }
 
 .digital-category-link-wrapper {

@@ -1,0 +1,46 @@
+.usedMobile-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.page-title {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.post-card {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 1rem;
+    background-color: #f1f4fe;
+    margin-top: 0.8rem;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+
+    li {
+        list-style: none;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        color: #4da0ff;
+    }
+
+    .active {
+        background-color: #0070f3;
+        color: white;
+    }
+}

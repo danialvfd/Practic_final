@@ -14,7 +14,7 @@ export interface DigitalCategoryBox {
 
 export const categoryItems: CategoryItem[] = [
   { id: 1, image: "/images/cat-1.png", label: "سوپرمارکت دیجی‌کالا", slug: "supermarkets" },
-  { id: 2, image: "/images/cat-2.png", label: "تخفیف موبایل‌کارکرده" },
+  { id: 2, image: "/images/cat-2.png", label: "تخفیف موبایل‌کارکرده", slug: "usedMobile" },
   { id: 3, image: "/images/cat-3.png", label: "خرید طلای دیجیتال" },
   { id: 4, image: "/images/cat-4.png", label: "اشتراک پلاس" },
   { id: 5, image: "/images/cat-5.png", label: "خرید طلای فیزیکی" },

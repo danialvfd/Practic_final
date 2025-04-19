@@ -18,8 +18,8 @@ const OffersSwiper = () => {
             slidesPerView: 7,
             spaceBetween: 20,
           },
-          768: {
-            slidesPerView: 5,
+          425: {
+            slidesPerView: 2,
           },
         }}
         loop={false}

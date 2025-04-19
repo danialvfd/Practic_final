@@ -13,8 +13,15 @@ const CategorySwiper = () => {
         <div className="main-category-swiper-container">
             <h2>خرید بر اساس دسته‌بندی</h2>
             <Swiper
-                spaceBetween={10}
-                slidesPerView={6}
+                breakpoints={{
+                    1024: {
+                        slidesPerView: 6,
+                        spaceBetween: 10,
+                    },
+                    426: {
+                        slidesPerView: 4,
+                    },
+                }}
                 grid={{
                     rows: 2,
                     fill: "row"
