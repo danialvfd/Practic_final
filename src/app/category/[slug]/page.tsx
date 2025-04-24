@@ -1,4 +1,5 @@
-'use client'
+'use client';
+
 import { useEffect, useState } from 'react';
 
 interface Post {
@@ -7,21 +8,28 @@ interface Post {
   body: string;
 }
 
-const CategoryPage = ({ params }: { params: { slug: string } }) => {
+const CategoryPage = ({ params }: { params: Promise<{ slug: string }> }) => {
   const [posts, setPosts] = useState<Post[]>([]);
+  const [slug, setSlug] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/posts')
-      .then(res => res.json())
-      .then(data => {
-        setPosts(data.slice(0, 10));
-      });
-  }, [params.slug]);
+    const resolveParamsAndFetch = async () => {
+      const resolvedParams = await params;
+      setSlug(resolvedParams.slug);
+      const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+      const data: Post[] = await res.json();
+      setPosts(data.slice(0, 10));
+    };
+    resolveParamsAndFetch();
+  }, [params]);
+  if (!slug) {
+    return <div>Loading</div>;
+  }
 
   return (
     <div className="container">
-      <h1>دسته‌بندی: {params.slug}</h1>
-      {posts.map(post => (
+      <h1>دسته‌بندی: {slug}</h1>
+      {posts.map((post) => (
         <div key={post.id} className="post">
           <h3>{post.title}</h3>
           <p>{post.body}</p>
