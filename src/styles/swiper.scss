@@ -84,6 +84,7 @@
   background-color: white;
   padding: 1rem;
   border-radius: 0.5rem;
+  height: 20rem;
 }
 
 .offer-image {
@@ -95,6 +96,7 @@
 
 .offer-details {
   margin-top: 10px;
+  min-height: 90px;
 }
 
 .offer-description {
@@ -103,6 +105,7 @@
 }
 
 .offer-price {
+  min-height: 32px;
   text-align: left;
   display: flex;
   justify-content: space-between;
@@ -154,4 +157,19 @@
 .main-category-title {
   margin-top: 0.5rem;
   font-size: 0.9rem;
+}
+
+.offer-original-price.no-discount {
+  text-decoration: none;
+  color: #555;
+  text-align: center;
+}
+
+.offer-price-noDiscount {
+  min-height: 32px;
+  text-align: left;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
 }

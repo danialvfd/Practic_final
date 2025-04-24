@@ -20,9 +20,9 @@ export const offersData: OfferItem[] = [
     id: 2,
     image: "/images/offer-image-2.webp",
     description: "اسپیکر بلوتوثی قابل حمل جی بی ال مدل Party Box 310",
-    price: 30018200,
-    discountPercentage: 18,
-    //originalPrice: 36428200,  
+    //price: 30018200,
+    //discountPercentage: 18,
+    originalPrice: 36428200,  
   },
   {
     id: 3,

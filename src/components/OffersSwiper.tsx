@@ -29,26 +29,35 @@ const OffersSwiper = () => {
         {offersData.map((item) => (
           <SwiperSlide key={item.id}>
             <div className="offer-item">
-              <img src={item.image} alt={item.description} className="offer-image" />
+              <img src={item.image} alt={item.description} className="offer-image"/>
               <div className="offer-details">
                 <p className="offer-description">
                   {item.description.length > 30
                     ? item.description.slice(0, 30) + '...'
                     : item.description}
                 </p>
-                {item.price && item.originalPrice ? (
+                {item.price && item.originalPrice && item.discountPercentage ? (
                   <>
                     <div className="offer-price">
-                      <span className="offer-discount">{item.discountPercentage}%</span>
-                      <span className="offer-current-price">{numberSeperator(item.price)} تومان</span>
+                      <span className="offer-discount">
+                        {item.discountPercentage}%
+                      </span>
+                      <span className="offer-current-price">
+                        {numberSeperator(item.price)} تومان
+                      </span>
                     </div>
-                    <p className="offer-original-price">{numberSeperator(item.originalPrice)} تومان</p>
+                    <p className="offer-original-price">
+                      {numberSeperator(item.originalPrice)} تومان
+                    </p>
                   </>
-                ) : item.price ? (
-                  <div className="offer-price">
-                    <span className="offer-current-price">{numberSeperator(item.price)} تومان</span>
-                  </div>
                 ) : null}
+                {!item.price && !item.discountPercentage && item.originalPrice && (
+                  <div className="offer-price-noDiscount">
+                    <span className="offer-original-price no-discount">
+                      {numberSeperator(item.originalPrice)} تومان
+                    </span>
+                  </div>
+                )}
               </div>
             </div>
           </SwiperSlide>
